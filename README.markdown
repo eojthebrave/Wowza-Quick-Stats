@@ -2,7 +2,8 @@ Basic node.js application to query a Wowza Streaming Media Server and collect ba
 
 In order for this to work your WMS instance must have the connectioncount HTTP provider enabled and either open to the public or protected by admin-basic authentication. This application currently does not work with admin-digest authentication.
 
-*Usage*
+### Usage
+
 Download/Clone this code.
 Run setup.sh in order to download the necessary modules.
 
@@ -11,9 +12,10 @@ Run setup.sh in order to download the necessary modules.
 Once the required modules are installed you can execute the program as follows.
 
 `chmod u+x wowza-stats.js`
+
 `./wowza-stats.js --ur=http://wowza-server.example.com:8086/connectioncount`
 
-Options
+### Options
 
 --uri (required)
 The URI of the connectioncount HTTP provider.
@@ -24,5 +26,6 @@ If set the application will automatically repeat the stats check every --delay m
 --delay (optional) default 30000
 Number of miliseconds to delay between repeats. Defaults to 30 seconds if not specified.
 
-*Credits*
+### Credits
+
 @eojthebrave
